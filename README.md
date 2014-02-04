@@ -31,7 +31,7 @@ name. When submitted, if the code identifies a manuscript and the specified auth
 The project already includes ```Manuscript``` and ```Author``` models. Use ```Manuscript.find_by_code``` and
 ```Author#last_name``` to implement the above.
 
-Below are the matching rules.
+Below are the rules for matching the input against ```Author#last_name```.
 
 * ignore surrounding whitespace and case
 * accept match on first 3 chars (e.g. Jon for Jones)
