@@ -3,5 +3,5 @@ class Author
 
   embedded_in :manuscript
 
-  field :last_name, type: String
+  field :publish_name, type: String
 end
