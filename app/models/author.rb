@@ -4,4 +4,8 @@ class Author
   embedded_in :manuscript
 
   field :publish_name, type: String
+
+  def last_name
+    publish_name.split(',').first
+  end
 end
