@@ -4,6 +4,7 @@ ToyAsis::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
+  root 'status#new'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
@@ -53,4 +54,6 @@ ToyAsis::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+  resource :status, :only => [:new, :show], :controller => 'status'
 end

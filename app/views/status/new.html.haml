@@ -1,0 +1,15 @@
+- if @authorization_error
+  .errors
+    %strong No match found
+
+= form_tag status_path, :method => :get do
+  .group
+    = label_tag :code
+    = text_field_tag :code, params[:accode], :required => true
+
+  .group
+    = label_tag :author
+    = text_field_tag :author, params[:author], :required => true
+
+  .group
+    = submit_tag 'Search'

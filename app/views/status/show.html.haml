@@ -1,0 +1,12 @@
+%h1 Status for #{@manuscript.code}
+
+%h3= @manuscript.title
+
+%p
+  Status: #{@manuscript.status}
+
+%strong Authors:
+
+%ul
+  - @manuscript.authors.each do |a|
+    %li= a.last_name
